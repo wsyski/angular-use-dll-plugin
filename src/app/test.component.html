@@ -1,0 +1,6 @@
+<div>
+  <p #text>{{title}}</p>
+  <input type="text" [(ngModel)]="name" (ngModelChange)="uppercase($event)">
+  <p>{{name}}</p>
+  <button (click)="handle(text)" class="bg-yellow">CLICK</button>
+</div>
