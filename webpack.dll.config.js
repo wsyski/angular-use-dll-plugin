@@ -9,8 +9,10 @@ module.exports = {
     // },
     entry: {
         angular: [
+            "@angular/animations",
             "@angular/core",
             "@angular/common",
+            "@angular/forms",
             "@angular/router",
             "@angular/platform-browser",
             "@angular/platform-browser-dynamic",
@@ -22,7 +24,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, "./src/dll"),
-        filename: "[name]-dll.js",
+        filename: "[name]-dll-es2015.js",
         library: "[name]"
     },
     plugins: [

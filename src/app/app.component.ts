@@ -15,7 +15,7 @@ declare const SVG;
 export class AppComponent implements OnInit {
   title = 'my-app';
   values: Observable<number>;
-  @ViewChild('text') input: ElementRef;
+  @ViewChild('text', { static: false }) input: ElementRef;
   constructor() {
     // const source$ = interval(1000).pipe(
     //   // map(x => Math.floor(Math.random() * 10)),
