@@ -9,20 +9,20 @@ module.exports = {
     // },
     entry: {
         angular: [
-            "@angular/core", 
-            "@angular/common", 
-            "@angular/router", 
-            "@angular/platform-browser", 
-            "@angular/platform-browser-dynamic", 
-            "rxjs", 
-            "zone.js", 
+            "@angular/core",
+            "@angular/common",
+            "@angular/router",
+            "@angular/platform-browser",
+            "@angular/platform-browser-dynamic",
+            "rxjs",
+            "zone.js",
             "core-js"
         ],
         // ui: []
     },
     output: {
         path: path.join(__dirname, "./src/dll"),
-        filename: "[name].dll.js",
+        filename: "[name]-dll.js",
         library: "[name]"
     },
     plugins: [
